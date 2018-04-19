@@ -1,0 +1,521 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TEServer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\TEServer1.ico"
+IDR_DESPANE             ICON    DISCARDABLE     "res\\icon1.ico"
+IDR_DBSPANE             ICON    DISCARDABLE     "res\\ico00001.ico"
+IDR_DATABASEPANE        ICON    DISCARDABLE     "res\\ico00002.ico"
+IDI_NETWORK             ICON    DISCARDABLE     "res\\network.ico"
+IDR_CSSPANE             ICON    DISCARDABLE     "res\\ico00003.ico"
+IDR_COMPANE             ICON    DISCARDABLE     "res\\COMPANE.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 234, 51
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Abort TEServer"
+FONT 8, "Arial"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "TEServer DES_V2.01_20081128 版",IDC_VERSION,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "CopyRight (C) 2009(C1W2)",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,179,4,50,14,WS_GROUP
+END
+
+IDD_TESERVER_DLG DIALOGEX 0, 0, 363, 222
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TEServer"
+FONT 8, "Arial", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_DATA_INFO,199,5,159,212,ES_MULTILINE | 
+                    ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_DES_DLG DIALOG DISCARDABLE  0, 0, 184, 181
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "Arial"
+BEGIN
+    GROUPBOX        "连接",IDC_STATIC_CONN_GROUP,5,5,174,61
+    RTEXT           "状态:",IDC_STATIC_STATE,9,18,45,8
+    RTEXT           "运行时间:",IDC_STATIC_RUM_TIME,9,33,45,8
+    RTEXT           "本机IP:",IDC_STATIC_LOCAL_IP,9,47,45,8
+    PUSHBUTTON      "开 始",IDC_CONNECT_BUTTON,132,156,39,14
+    LTEXT           "状态",IDC_STATE,63,18,103,8
+    LTEXT           "运行时间",IDC_RUM_TIME,63,33,103,8
+    LTEXT           "本机IP",IDC_LOCAL_IP,63,47,103,8
+    GROUPBOX        "活动",IDC_STATIC_ACTIVITY,5,70,174,78
+    RTEXT           "数据包:",IDC_STATIC_SEND_PACKATGE,12,116,28,8
+    LTEXT           "发送",IDC_STATIC_SEND,38,88,26,8
+    LTEXT           "收到",IDC_STATIC_RECV,144,88,26,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,69,91,11,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,121,92,11,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,100,113,1,12
+    ICON            IDI_NETWORK,IDC_STATIC,92,81,20,20
+    RTEXT           "发送",IDC_SEND_PACKATGE,45,116,45,8
+    RTEXT           "收到",IDC_RECE_PACKATGE,106,116,54,8
+    PUSHBUTTON      "属 性",IDC_PROPERTY_BUTTON,81,156,39,14
+    CONTROL         "显示",IDC_SHOW_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,158,31,10
+    RTEXT           "连接数:",IDC_STATIC_CONN_NUMBER,12,134,28,8
+    RTEXT           "连接数",IDC_CONN_NUMBER,45,135,45,8
+END
+
+IDD_CSS_DLG DIALOG DISCARDABLE  0, 0, 184, 181
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "Arial"
+BEGIN
+    GROUPBOX        "连接",IDC_STATIC_CONN_GROUP,7,7,170,59
+    RTEXT           "状态:",IDC_STATIC_STATE,10,18,43,8
+    RTEXT           "运行时间:",IDC_STATIC_RUM_TIME,10,32,43,8
+    RTEXT           "本机IP:",IDC_STATIC_LOCAL_IP,10,46,43,8
+    PUSHBUTTON      "开 始",IDC_CONNECT_BUTTON,132,156,39,14
+    LTEXT           "状态",IDC_STATE,59,18,103,8
+    LTEXT           "运行时间",IDC_RUM_TIME,59,32,103,8
+    LTEXT           "本机IP",IDC_LOCAL_IP,59,46,103,8
+    GROUPBOX        "活动",IDC_STATIC_ACTIVITY,7,70,170,78
+    RTEXT           "数据包:",IDC_STATIC_SEND_PACKATGE,12,116,28,8
+    LTEXT           "发送",IDC_STATIC_SEND,38,88,23,8
+    LTEXT           "收到",IDC_STATIC_RECV,144,88,25,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,69,91,11,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,121,92,11,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,100,113,1,12
+    ICON            IDI_NETWORK,IDC_STATIC,92,81,20,20
+    RTEXT           "发送",IDC_SEND_PACKATGE,45,116,45,8
+    RTEXT           "收到",IDC_RECE_PACKATGE,106,116,54,8
+    PUSHBUTTON      "属 性",IDC_PROPERTY_BUTTON,81,156,39,14
+    CONTROL         "显示",IDC_SHOW_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,158,31,10
+    RTEXT           "连接数:",IDC_STATIC_CONN_NUMBER,12,134,28,8
+    RTEXT           "连接数",IDC_CONN_NUMBER,45,135,45,8
+END
+
+IDD_DBDATA_DLG DIALOG DISCARDABLE  0, 0, 184, 181
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "Arial"
+BEGIN
+    PUSHBUTTON      "开 始",IDC_CONNECT_BUTTON,116,109,52,14
+    RTEXT           "服务器名称:",IDC_STATIC_SERVER_NAME,13,23,55,8
+    GROUPBOX        "数据库配置",IDC_STATIC_DB_CONFIG,7,7,170,89
+    RTEXT           "默认数据库:",IDC_STATIC_DATABASE_NAME,13,40,55,8
+    RTEXT           "数据库用户:",IDC_STATIC_USER_NAME,13,57,55,8
+    RTEXT           "数据库口令:",IDC_STATIC_USER_PSD,13,74,55,8
+    EDITTEXT        IDC_SERVER_NAME,73,20,80,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DATABASE_NAME,73,37,80,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_USER_NAME,73,54,80,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_USER_PSD,73,71,80,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_INFO,16,112,76,8
+END
+
+IDD_CONFIG_DLG DIALOG DISCARDABLE  0, 0, 142, 86
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "::Setup Dialog::"
+FONT 8, "Arial"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,13,67,43,14
+    PUSHBUTTON      "Cancel",IDCANCEL,86,67,43,14
+    GROUPBOX        "",IDC_STATIC_CONFIG,5,4,133,58
+    RTEXT           "IP地址:",IDC_IP_NAME,15,17,35,8
+    RTEXT           "端口:",IDC_PORT1,15,32,35,8
+    RTEXT           "端口:",IDC_PORT2,15,47,35,8
+    EDITTEXT        IDC_EDIT1,56,15,70,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,56,30,70,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,56,45,70,14,ES_AUTOHSCROLL
+END
+
+IDD_STOPSOCKET_DLG DIALOG DISCARDABLE  0, 0, 151, 88
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "SOCKET方式"
+FONT 8, "Arial"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,68,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,88,68,50,14
+    GROUPBOX        "连接方式",IDC_STATIC_MODE,7,4,138,57
+    CONTROL         "UDP连接方式",IDC_UDP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,22,107,10
+    CONTROL         "TCP连接方式",IDC_TCP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,41,107,10
+END
+
+IDD_BSS_DLG DIALOG DISCARDABLE  0, 0, 184, 181
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "Arial"
+BEGIN
+    GROUPBOX        "连接",IDC_STATIC_CONN_GROUP,7,7,170,59
+    RTEXT           "状态:",IDC_STATIC_STATE,10,18,43,8
+    RTEXT           "运行时间:",IDC_STATIC_RUM_TIME,10,32,43,8
+    RTEXT           "本机IP:",IDC_STATIC_LOCAL_IP,10,46,43,8
+    PUSHBUTTON      "开 始",IDC_CONNECT_BUTTON,132,156,39,14
+    LTEXT           "状态",IDC_STATE,59,18,103,8
+    LTEXT           "运行时间",IDC_RUM_TIME,59,32,103,8
+    LTEXT           "本机IP",IDC_LOCAL_IP,59,46,103,8
+    GROUPBOX        "活动",IDC_STATIC_ACTIVITY,7,70,170,78
+    RTEXT           "数据包:",IDC_STATIC_SEND_PACKATGE,12,116,28,8
+    LTEXT           "发送",IDC_STATIC_SEND,38,88,23,8
+    LTEXT           "收到",IDC_STATIC_RECV,144,88,25,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,69,91,11,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,121,92,11,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,100,113,1,12
+    ICON            IDI_NETWORK,IDC_STATIC,92,81,20,20
+    RTEXT           "发送",IDC_SEND_PACKATGE,45,116,45,8
+    RTEXT           "收到",IDC_RECE_PACKATGE,106,116,54,8
+    PUSHBUTTON      "属 性",IDC_PROPERTY_BUTTON,81,156,39,14
+    CONTROL         "显示",IDC_SHOW_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,158,31,10
+    RTEXT           "连接数:",IDC_STATIC_CONN_NUMBER,12,134,28,8
+    RTEXT           "连接数",IDC_CONN_NUMBER,45,135,45,8
+END
+
+IDD_DES_DLG2 DIALOG DISCARDABLE  0, 0, 184, 181
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "Arial"
+BEGIN
+    GROUPBOX        "连接",IDC_STATIC_CONN_GROUP,5,5,174,61
+    RTEXT           "状态:",IDC_STATIC_STATE,9,18,45,8
+    RTEXT           "运行时间:",IDC_STATIC_RUM_TIME,9,33,45,8
+    RTEXT           "本机IP:",IDC_STATIC_LOCAL_IP,9,47,45,8
+    PUSHBUTTON      "开 始",IDC_CONNECT_BUTTON,132,156,39,14
+    LTEXT           "状态",IDC_STATE,63,18,103,8
+    LTEXT           "运行时间",IDC_RUM_TIME,63,33,103,8
+    LTEXT           "本机IP",IDC_LOCAL_IP,63,47,111,8
+    GROUPBOX        "活动",IDC_STATIC_ACTIVITY,5,70,174,78
+    RTEXT           "数据包:",IDC_STATIC_SEND_PACKATGE,12,116,28,8
+    LTEXT           "发送",IDC_STATIC_SEND,38,88,26,8
+    LTEXT           "收到",IDC_STATIC_RECV,144,88,26,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,69,91,11,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,121,92,11,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,100,113,1,12
+    ICON            IDI_NETWORK,IDC_STATIC,92,81,20,20
+    RTEXT           "发送",IDC_SEND_PACKATGE,45,116,45,8
+    RTEXT           "收到",IDC_RECE_PACKATGE,106,116,54,8
+    PUSHBUTTON      "属 性",IDC_PROPERTY_BUTTON,81,156,39,14
+    CONTROL         "显示",IDC_SHOW_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,158,31,10
+END
+
+IDD_COM_CONFIG_DLG DIALOG DISCARDABLE  0, 0, 153, 74
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "COM Config"
+FONT 8, "Arial"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,4,56,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,98,56,50,14
+    RTEXT           "COM Port:",IDC_STATIC,19,13,39,8
+    RTEXT           "BAUD Rate:",IDC_STATIC,19,30,39,8
+    COMBOBOX        IDC_COMBO_PORT,66,12,64,83,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_BAUDRATE,66,29,64,108,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,5,3,144,51
+END
+
+IDD_SOCKET_ERROR_DLG DIALOG DISCARDABLE  0, 0, 154, 57
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Socket Send"
+FONT 8, "Arial"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,36,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,99,36,50,14
+    LTEXT           "Send Socket Data Mode Error!",IDC_ERROR_CODE,10,11,138,
+                    18
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "TEServer Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "TEServer\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TEServer.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "TEServer 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 229
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 47
+    END
+
+    IDD_TESERVER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 358
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 217
+    END
+
+    IDD_DES_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 179
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_CSS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_DBDATA_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_CONFIG_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 138
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_STOPSOCKET_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 145
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_BSS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_DES_DLG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 179
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_COM_CONFIG_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 148
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_SOCKET_ERROR_DLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 153
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_APP_BMP             BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_TRAY_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "POPMENU"
+    BEGIN
+        MENUITEM "&Exit",                       ID_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_COM_CONFIG_DLG DLGINIT
+BEGIN
+    IDC_COMBO_BAUDRATE, 0x403, 5, 0
+0x3834, 0x3030, "\000" 
+    IDC_COMBO_BAUDRATE, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_COMBO_BAUDRATE, 0x403, 6, 0
+0x3431, 0x3034, 0x0030, 
+    IDC_COMBO_BAUDRATE, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_COMBO_BAUDRATE, 0x403, 6, 0
+0x3833, 0x3034, 0x0030, 
+    IDC_COMBO_BAUDRATE, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    IDC_COMBO_BAUDRATE, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 TEServer(&A)..."
+    IDS_VERSION             "DES_V2.24_20130410 "
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\TEServer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

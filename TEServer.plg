@@ -1,0 +1,118 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TEServer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "F:\DOCUME~1\wyb\LOCALS~1\Temp\RSPF9B.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/TEServer.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /Zm500 /GZ /c 
+"G:\WorkData\VCData\public\DEProtocolB.cpp"
+]
+Creating command line "cl.exe @F:\DOCUME~1\wyb\LOCALS~1\Temp\RSPF9B.tmp" 
+Creating temporary file "F:\DOCUME~1\wyb\LOCALS~1\Temp\RSPF9C.tmp" with contents
+[
+my3l_Ex.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/TEServer.pdb" /debug /machine:I386 /out:"Debug/TEServer.exe" /pdbtype:sept 
+.\Debug\ADODB.obj
+.\Debug\BSSDlg.obj
+.\Debug\ComConfigDlg.obj
+.\Debug\Comm.obj
+.\Debug\ConfigDlg.obj
+.\Debug\CSSDlg.obj
+.\Debug\Data.obj
+.\Debug\DBDataDlg.obj
+.\Debug\DEProtocolA.obj
+.\Debug\DEProtocolB.obj
+.\Debug\DEProtocolC.obj
+.\Debug\DEProtocolD.obj
+.\Debug\DEProtocolE.obj
+.\Debug\DEProtocolF.obj
+.\Debug\DESDlg.obj
+.\Debug\Encrypt.obj
+.\Debug\EncryptionData.obj
+.\Debug\HttpData.obj
+.\Debug\HttpSocket.obj
+.\Debug\Language.obj
+.\Debug\LanguageCN.obj
+.\Debug\LanguageEN.obj
+.\Debug\MacIP.obj
+.\Debug\ProtocolData.obj
+.\Debug\ProxySocket.obj
+.\Debug\public.obj
+.\Debug\QueryGGAddr.obj
+.\Debug\QuerySocketObject.obj
+.\Debug\ServerSocket.obj
+.\Debug\ShinboPublic.obj
+.\Debug\SocketSendErrorDlg.obj
+.\Debug\SoftKey.obj
+.\Debug\SQLDBData.obj
+.\Debug\StdAfx.obj
+.\Debug\StopSocketDlg.obj
+.\Debug\StoreImage.obj
+.\Debug\TerminalData.obj
+.\Debug\TEServer.obj
+.\Debug\TEServerDlg.obj
+.\Debug\Thread.obj
+.\Debug\TEServer.res
+]
+Creating command line "link.exe @F:\DOCUME~1\wyb\LOCALS~1\Temp\RSPF9C.tmp"
+<h3>Output Window</h3>
+Compiling...
+DEProtocolB.cpp
+Linking...
+Creating temporary file "F:\DOCUME~1\wyb\LOCALS~1\Temp\RSPF9D.tmp" with contents
+[
+/nologo /o"Debug/TEServer.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\ADODB.sbr
+.\Debug\BSSDlg.sbr
+.\Debug\ComConfigDlg.sbr
+.\Debug\Comm.sbr
+.\Debug\ConfigDlg.sbr
+.\Debug\CSSDlg.sbr
+.\Debug\Data.sbr
+.\Debug\DBDataDlg.sbr
+.\Debug\DEProtocolA.sbr
+.\Debug\DEProtocolB.sbr
+.\Debug\DEProtocolC.sbr
+.\Debug\DEProtocolD.sbr
+.\Debug\DEProtocolE.sbr
+.\Debug\DEProtocolF.sbr
+.\Debug\DESDlg.sbr
+.\Debug\Encrypt.sbr
+.\Debug\EncryptionData.sbr
+.\Debug\HttpData.sbr
+.\Debug\HttpSocket.sbr
+.\Debug\Language.sbr
+.\Debug\LanguageCN.sbr
+.\Debug\LanguageEN.sbr
+.\Debug\MacIP.sbr
+.\Debug\ProtocolData.sbr
+.\Debug\ProxySocket.sbr
+.\Debug\public.sbr
+.\Debug\QueryGGAddr.sbr
+.\Debug\QuerySocketObject.sbr
+.\Debug\ServerSocket.sbr
+.\Debug\ShinboPublic.sbr
+.\Debug\SocketSendErrorDlg.sbr
+.\Debug\SoftKey.sbr
+.\Debug\SQLDBData.sbr
+.\Debug\StopSocketDlg.sbr
+.\Debug\StoreImage.sbr
+.\Debug\TerminalData.sbr
+.\Debug\TEServer.sbr
+.\Debug\TEServerDlg.sbr
+.\Debug\Thread.sbr]
+Creating command line "bscmake.exe @F:\DOCUME~1\wyb\LOCALS~1\Temp\RSPF9D.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+TEServer.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
